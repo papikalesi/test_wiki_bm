@@ -1,0 +1,64 @@
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+.main {
+  flex-direction: row;
+  justify-content: space-between;
+}
+  .m-col {
+    flex-direction: column;
+    width: calc(50% - 0.5rem);
+  }
+  .m-left {
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+  }
+  .m-right {
+    margin-left: 0.5rem;
+  }
+.s-padding {
+  padding: 5rem;
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
+
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: local("SourceSansPro-Regular"),
+       url("../files/fonts/Source Sans Pro/SourceSansPro-Regular.ttf");
+}
+@font-face {
+  font-family: "Merriweather";
+  src: local("Merriweather-Regular"),
+       url("../files/fonts/Merriweather/Merriweather-Regular.ttf");
+}
+@font-face {
+  font-family: "Merriweather-Italic";
+  src: local("Merriweather-Italic"),
+       url("../files/fonts/Merriweather/Merriweather-Italic.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans"),
+       url("../files/fonts/OpenSans.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Italic";
+  src: local("OpenSans-Italic"),
+       url("../files/fonts/OpenSans-Italic.ttf");
+}
