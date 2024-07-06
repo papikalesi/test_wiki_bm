@@ -5,10 +5,10 @@ ul, ol, h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-weight: 900;
-    line-height: 1.5;
-    letter-spacing: 0.075em;
-    text-transform: uppercase;
-    margin: 0 0 1rem 0;
+	line-height: 1.5;
+	letter-spacing: 0.075em;
+	text-transform: uppercase;
+	margin: 0 0 1rem 0;
 }
 	strong, b {
 		font-weight: 600;
@@ -57,15 +57,15 @@ h1, h2, h3, h4, h5, h6 {
 		line-height: 2rem;
 		margin-bottom: 0;
 	}
-body {
-	font-family: "Merriweather", Georgia, serif;
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 2.375;
+
+.s-padding {
+	padding: 2rem;
 }
-li {
-	font-size: 1.3rem;
-	margin-bottom: 0.5rem;
+.b-radius {
+	border-radius: 0;
+}
+.z-in {
+	z-index: 10;
 }
 hr {
     border: 0;
@@ -73,11 +73,26 @@ hr {
     border-bottom-color: #bbbbbb;
     margin: 3rem 0;
 }
-.z-in {
-	z-index: 10;
+
+.link {
+	color: rgb(27, 103, 165);
+	text-decoration: none;
 }
+	.link:hover {
+		color: rgb(65 155 229);
+	}
+	.link:after {
+		font-family: icomoon;
+		padding-left: 0.2rem;
+		font-size: 0.75rem;
+		content: "\e9cb";
+	}
 /* base */
 body {
+	font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 2.375;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -109,106 +124,127 @@ body {
 			max-width: 100%;
 			border-radius: .7rem;
 		}
+		.pic-footer {
+			border-radius: 0 0 0.5rem 0.5rem;
+		}
+			.pic-footer p {
+				text-align: center;
+				font-size: 1rem;
+				padding: 0.75rem;
+				line-height: 1.75rem;
+				opacity: 0.75;
+			}
+			.pic-footer a {
+				color: rgb(27, 103, 165);
+				padding: 0.3rem;
+				border: 1px solid;
+				border-radius: 0.5rem;
+				text-decoration: none;
+			}
+				.pic-footer a:hover{
+					color: rgb(65 155 229);
+				}
 		
-.main {
-	display: flex;
-	flex-direction: column;
-	font-family: OpenSans;
-	width: 100%;
-	height: auto;
-}
-	.m-col {
+	.main {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
+		height: auto;
 	}
-	.m-left {
-		margin-bottom: 1rem;
-	}
-	.m-right {
-	}
-		.item {
+		.m-col {
 			display: flex;
 			flex-direction: column;
-			background-color: white;
-			color: black;
+			width: 100%;
+		}
+		.m-left {
 			margin-bottom: 1rem;
-			border-radius: .5rem;
 		}
-			.item:last-child {
-				margin-bottom: 0;
+		.m-right {  }
+			.item {
+				display: flex;
+				flex-direction: column;
+				background-color: white;
+				color: black;
+				margin-bottom: 2rem;
+				border-radius: .5rem;
 			}
-		.i-head {
-			background-color: grey;
-			color: white;
-			width: 100%;
-			padding: 1rem;
-			border-radius: .5rem .5rem 0 0;
-		}
-			.i-head h3 {
-				margin-bottom: 0;
-			}
-			.ser > .i-head {
-				background-color: rgb(88, 200, 0);
-			}
-			.sec > .i-head {
-				background-color: rgb(203, 0, 0);
-			}
-			.com > .i-head {
-				background-color: rgb(27, 103, 165);
-			}
-		.i-content {
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-			padding: 1rem;
-			min-height: 10rem;
-			border-radius: 0 0 .5rem .5rem;
-		}
-			.i-content p {
-				margin-bottom: 1rem;
-			}
-				.i-content p:last-child {
+				.item:last-child {
 					margin-bottom: 0;
 				}
-			.ser > .i-content {
-				background-color: rgb(88, 200, 0, 0.1);
-			}
-			.sec > .i-content {
-				background-color: rgb(203, 0,  0, 0.1);
-			}
-			.com > .i-content {
-				background-color: rgb(27, 103, 165, 0.1);
-			}
-
-
-.s-padding {
-	padding: 4rem 2rem 2rem 2rem;
-}
-.b-radius {
-	border-radius: .5rem .5rem 0 0;
-}
-.recipe {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 1em;
-}
-	.recipe:last-child {
-		margin-bottom: 0;
-	}
-	.recipe div:first-child {
-		font-weight: 700;
-		flex: 0 0 auto;
-    	width: 100%;
-	}
-	.recipe ul {
-		margin-bottom: 0;
-	}
-		.recipe ul li {
-			font-size: 1rem;
-			line-height: 1.8rem;
-			margin-bottom: 0;
-		}
-			.recipe ul li:last-child {
-				margin-bottom: 0;
-			}
+				.i-head {
+					background-color: grey;
+					color: white;
+					width: 100%;
+					padding: 1rem;
+					border-radius: .5rem .5rem 0 0;
+				}
+					.i-head h3 {
+						margin-bottom: 0;
+					}
+					.ser > .i-head {
+						background-color: rgb(88, 200, 0);
+					}
+					.sec > .i-head {
+						background-color: rgb(203, 0, 0);
+					}
+					.com > .i-head {
+						background-color: rgb(27, 103, 165);
+					}
+				.i-content {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+					padding: 1rem;
+					min-height: 5rem;
+					border-radius: 0 0 .5rem .5rem;
+				}
+					.i-content h3 {
+						font-family: 'Ubuntu-Bold', sans-serif;
+						opacity: 0.65;
+						text-transform: none;
+						font-weight: 900;
+						margin-bottom: 0.2rem;
+					}
+					.i-content p {
+						opacity: 0.65;
+						margin-bottom: 0.75rem;
+						line-height: 1.25rem;
+						font-size: 0.85rem;
+					}
+						.i-content p:last-child {
+							margin-bottom: 0;
+						}
+					.ser > .i-content {
+						background-color: rgb(88, 200, 0, 0.1);
+					}
+					.sec > .i-content {
+						background-color: rgb(203, 0,  0, 0.1);
+					}
+					.com > .i-content {
+						background-color: rgb(27, 103, 165, 0.1);
+					}
+					.icons-wrap {
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: center;
+					}
+						.icons-wrap a {
+							max-width: 10rem;
+							display: flex;
+							justify-content: center;
+							flex-direction: row;
+							align-items: center;
+							text-decoration: none;
+							color: rgb(27, 103, 165);
+							margin: 0 0.25rem;
+						}
+							.icons-wrap a:hover {
+								color: rgb(65 155 229);
+							}
+								.icons-wrap img {
+									width: 3rem;
+									margin-right: 0.2rem;
+								}
+								.icons-wrap p {
+									opacity: 1;
+								}
