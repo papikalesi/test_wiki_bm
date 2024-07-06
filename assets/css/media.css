@@ -14,27 +14,38 @@
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+.b-radius {
+    border-radius: .5rem .5rem 0 0;
+}
+.s-padding {
+  padding: 5rem;
+}
+.pic-footer p {
+  font-size: 0.85rem;
+  padding: 0.5rem 0.75rem;
+}
+
 .main {
   flex-direction: row;
   justify-content: space-between;
 }
   .m-col {
     flex-direction: column;
-    width: calc(50% - 0.5rem);
+    width: 100%;
   }
   .m-left {
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     margin-bottom: 0;
   }
   .m-right {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
   }
-.s-padding {
-  padding: 5rem;
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {  }
+@media (min-width: 1400px) { 
+
+}
 
 
 @font-face {
@@ -52,13 +63,30 @@
   src: local("Merriweather-Italic"),
        url("../files/fonts/Merriweather/Merriweather-Italic.ttf");
 }
+
 @font-face {
-  font-family: "OpenSans";
-  src: local("OpenSans"),
-       url("../files/fonts/OpenSans.ttf");
+  font-family: "icomoon";
+  src: local("icomoon"),
+       url("../files/fonts/icomoon.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: local("Ubuntu-Regular"),
+       url("Ubuntu-Regular.ttf");
 }
 @font-face {
-  font-family: "OpenSans-Italic";
-  src: local("OpenSans-Italic"),
-       url("../files/fonts/OpenSans-Italic.ttf");
+  font-family: "Ubuntu";
+  src: local("Ubuntu-Regular"),
+       url("../files/fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-Italic";
+  src: local("Ubuntu-Italic"),
+       url("../files/fonts/Ubuntu/Ubuntu-Italic.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: local("Ubuntu-Bold"),
+       url("../files/fonts/Ubuntu/Ubuntu-Bold.ttf");
 }
